@@ -11,7 +11,8 @@
       content="width=device-width, initial-scale=1.0" />
     <title>Traverse Landing Page</title>
   </head>
-  <body class="bg-bkg selection:bg-accent text-white selection:text-bkg">
+  <body
+    class="bg-bkg selection:bg-accent text-white selection:text-bkg text-base">
     <div id="parallax">
       <nav
         class="top-0 z-50 absolute place-items-center grid drop-shadow-text-sm w-full"
@@ -92,6 +93,186 @@
             of their dreams in the most exotic locations all around the globe.
           </p>
         </section>
+        <section
+          aria-labelledby="slider"
+          class="gap-4 grid sm:text-left text-center container">
+          <div class="relative">
+            <div
+              class="hidden sm:block -left-4 absolute bg-accent/10 w-8 h-full"></div>
+            <div
+              class="hidden sm:block -left-4 absolute bg-accent/10 w-8 h-full"></div>
+            <div>
+              <small
+                class="drop-shadow-text-sm text-accent uppercase tracking-widest"
+                >Off The Beaten Path</small
+              >
+              <h2
+                id="slider"
+                class="drop-shadow-text-md font-bold text-3xl tracking-wide">
+                Places without People
+              </h2>
+            </div>
+            <div
+              class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center space-x-4 space-y-4">
+              <p class="drop-shadow-text-sm max-w-2xl text-muted">
+                We specialize in finding places no one else knows about. Here
+                are a few of our favorite spots for true adventurers.
+              </p>
+              <div class="flex space-x-4">
+                <button
+                  data-slideBtn
+                  id="prev"
+                  aria-label="show previous image"
+                  class="place-items-center grid bg-accent hover:bg-accent/90 disabled:bg-accent/20 p-2 rounded-full focus:outline-non ring-accent focus-visible:ring-4 ring-offset-2 ring-offset-bkg text-bkg disabled:text-accent"
+                  disabled>
+                  <svg
+                    class="pointer-events-none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm48-88a8,8,0,0,1-8,8H107.31l18.35,18.34a8,8,0,0,1-11.32,11.32l-32-32a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,11.32L107.31,120H168A8,8,0,0,1,176,128Z"></path>
+                  </svg>
+                </button>
+                <button
+                  data-slideBtn
+                  id="next"
+                  aria-label="show next image"
+                  class="place-items-center grid bg-accent hover:bg-accent/90 disabled:bg-accent/20 p-2 rounded-full focus:outline-non ring-accent focus-visible:ring-4 ring-offset-2 ring-offset-bkg text-bkg disabled:text-accent">
+                  <svg
+                    class="pointer-events-none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="-mt-10 sm:-mt-20 lg:-mt-36 xs:w-screen container">
+          <div
+            class="flex transition-transform duration-500"
+            data-slideContainer>
+            <!-- Slide 1 -->
+            <div
+              class="relative flex-grow flex-shrink-0 pr-4 w-full xs:w-auto xs:basis-96"
+              data-slide>
+              <img
+                class="peer [@media(hover:hover)]:grayscale hover:grayscale-0 h-full object-cover transition-all"
+                src="/images/slider-1.jpg"
+                alt="Iceland Scene" />
+              <p
+                class="bottom-4 left-4 absolute bg-bkg [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 px-4 py-4 font-bold text-lg tracking-wide transition-opacity pointer-events-none">
+                Ocean Wonders
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+              class="relative flex-grow flex-shrink-0 pr-4 w-full xs:w-auto xs:basis-96"
+              data-slide>
+              <img
+                class="peer [@media(hover:hover)]:grayscale hover:grayscale-0 h-full object-cover transition-all"
+                src="/images/slider-2.jpg"
+                alt="Iceland Scene" />
+              <p
+                class="bottom-4 left-4 absolute bg-bkg [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 px-4 py-4 font-bold text-lg tracking-wide transition-opacity pointer-events-none">
+                Ocean Wonders
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="relative flex-grow flex-shrink-0 pr-4 w-full xs:w-auto xs:basis-96"
+              data-slide>
+              <img
+                class="peer [@media(hover:hover)]:grayscale hover:grayscale-0 h-full object-cover transition-all"
+                src="/images/slider-3.jpg"
+                alt="Iceland Scene" />
+              <p
+                class="bottom-4 left-4 absolute bg-bkg [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 px-4 py-4 font-bold text-lg tracking-wide transition-opacity pointer-events-none">
+                Ocean Wonders
+              </p>
+            </div>
+
+            <!-- Slide 4 -->
+            <div
+              class="relative flex-grow flex-shrink-0 pr-4 w-full xs:w-auto xs:basis-96"
+              data-slide>
+              <img
+                class="peer [@media(hover:hover)]:grayscale hover:grayscale-0 h-full object-cover transition-all"
+                src="/images/slider-4.jpg"
+                alt="Iceland Scene" />
+              <p
+                class="bottom-4 left-4 absolute bg-bkg [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 px-4 py-4 font-bold text-lg tracking-wide transition-opacity pointer-events-none">
+                Ocean Wonders
+              </p>
+            </div>
+
+            <!-- Slide 5 -->
+            <div
+              class="relative flex-grow flex-shrink-0 pr-4 w-full xs:w-auto xs:basis-96"
+              data-slide>
+              <img
+                class="peer [@media(hover:hover)]:grayscale hover:grayscale-0 h-full object-cover transition-all"
+                src="/images/slider-5.jpg"
+                alt="Iceland Scene" />
+              <p
+                class="bottom-4 left-4 absolute bg-bkg [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 px-4 py-4 font-bold text-lg tracking-wide transition-opacity pointer-events-none">
+                Ocean Wonders
+              </p>
+            </div>
+
+            <!-- Slide 6 -->
+            <div
+              class="relative flex-grow flex-shrink-0 pr-4 w-full xs:w-auto xs:basis-96"
+              data-slide>
+              <img
+                class="peer [@media(hover:hover)]:grayscale hover:grayscale-0 h-full object-cover transition-all"
+                src="/images/slider-6.jpg"
+                alt="Iceland Scene" />
+              <p
+                class="bottom-4 left-4 absolute bg-bkg [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 px-4 py-4 font-bold text-lg tracking-wide transition-opacity pointer-events-none">
+                Ocean Wonders
+              </p>
+            </div>
+
+            <!-- Slide 7 -->
+            <div
+              class="relative flex-grow flex-shrink-0 pr-4 w-full xs:w-auto xs:basis-96"
+              data-slide>
+              <img
+                class="peer [@media(hover:hover)]:grayscale hover:grayscale-0 h-full object-cover transition-all"
+                src="/images/slider-7.jpg"
+                alt="Iceland Scene" />
+              <p
+                class="bottom-4 left-4 absolute bg-bkg [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 px-4 py-4 font-bold text-lg tracking-wide transition-opacity pointer-events-none">
+                Ocean Wonders
+              </p>
+            </div>
+
+            <!-- Slide 8 -->
+            <div
+              class="relative flex-grow flex-shrink-0 pr-4 w-full xs:w-auto xs:basis-96"
+              data-slide>
+              <img
+                class="peer [@media(hover:hover)]:grayscale hover:grayscale-0 h-full object-cover transition-all"
+                src="/images/slider-8.jpg"
+                alt="Iceland Scene" />
+              <p
+                class="bottom-4 left-4 absolute bg-bkg [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 px-4 py-4 font-bold text-lg tracking-wide transition-opacity pointer-events-none">
+                Ocean Wonders
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
     <script

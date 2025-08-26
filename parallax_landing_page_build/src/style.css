@@ -124,7 +124,7 @@
   --drop-shadow-text-md: 1px 2px 0 rgba(0, 0, 0, 0.9);
   --drop-shadow-text-lg: 1px 4px 0 rgba(0, 0, 0, 0.9);
 
-  --container--margin: auto;
+  --breakpoint-xs: 425px;
 }
 
 /* :root {
