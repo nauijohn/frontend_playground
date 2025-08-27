@@ -12,8 +12,9 @@
     <title>Traverse Landing Page</title>
   </head>
   <body
-    class="bg-bkg selection:bg-accent text-white selection:text-bkg text-base">
-    <div id="parallax">
+    class="bg-bkg selection:bg-accent overflow-hidden text-white selection:text-bkg text-base">
+    <div
+      class="relative pb-12 sm:pb-0 h-screen overflow-x-hidden overflow-y-auto scroll-smooth perspective">
       <nav
         class="top-0 z-50 absolute place-items-center grid drop-shadow-text-sm w-full"
         aria-label="Primary Navigation">
@@ -34,12 +35,13 @@
         </a>
       </nav>
       <header
-        class="relative flex flex-col justify-evenly items-center min-h-screen">
+        class="relative flex flex-col justify-evenly items-center min-h-screen preserve-3d">
         <div
           class="bottom-3/4 absolute inset-0 bg-gradient-to-b from-accent to-transparent"></div>
         <div
-          class="top-1/3 -bottom-32 absolute inset-0 bg-gradient-to-t from-bkg/80 to-transparent"></div>
+          class="top-1/3 -bottom-32 absolute inset-0 bg-gradient-to-t from-bkg/80 to-transparent distance-1"></div>
         <img
+          class="-z-20 absolute w-full h-full object-center object-cover distance-1"
           sizes="(min-width: 500px) 480w, 650w, 800w, 1300w"
           srcset="
             ./images/hero-xs.jpg  480w,
@@ -47,18 +49,17 @@
             ./images/hero-md.jpg  800w,
             ./images/hero-lg.jpg 1300w
           "
-          class="-z-20 absolute w-full h-full object-center object-cover"
           src="./images/hero.jpg"
           aria-hidden="true" />
         <h1
-          class="drop-shadow-text-sm lg:drop-shadow-text-lg py-12 font-bold text-white text-5xl text-center tracking-wide">
+          class="drop-shadow-text-sm lg:drop-shadow-text-lg py-12 font-bold text-white text-5xl text-center tracking-wide distance-2">
           Unique Trips for <br />
           Adventurous <br />
           Travelers
         </h1>
         <a
           href="#contact-form"
-          class="flex items-center space-x-2 bg-accent hover:bg-accent/90 drop-shadow-text-lg hover:drop-shadow-2xl px-8 py-3 border border-bkg rounded-full focus:outline-none ring-accent focus-visible:ring-4 ring-offset-2 ring-offset-bkg font-medium text-bkg transition-shadow">
+          class="flex items-center space-x-2 bg-accent hover:bg-accent/90 drop-shadow-text-lg hover:drop-shadow-2xl px-8 py-3 border border-bkg rounded-full focus:outline-none ring-accent focus-visible:ring-4 ring-offset-2 ring-offset-bkg font-medium text-bkg transition-shadow distance-2">
           <span class="uppercase tracking-wide">Book a Trip</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +76,7 @@
         class="relative gap-16 sm:gap-24 lg:gap-40 grid mt-16 sm:mt-24 lg:mt-40 -mb-16 pb-16 overflow-hidden">
         <section
           aria-labelledby="headline"
-          class="gap-4 grid max-w-prose text-center container">
+          class="gap-4 grid max-w-prose text-center container fade-up">
           <div>
             <small
               class="drop-shadow-text-sm text-accent uppercase tracking-widest"
@@ -95,7 +96,7 @@
         </section>
         <section
           aria-labelledby="slider"
-          class="gap-4 grid sm:text-left text-center container">
+          class="gap-4 grid sm:text-left text-center container fade-up">
           <div class="relative">
             <div
               class="hidden sm:block -left-4 absolute bg-accent/10 w-8 h-full"></div>
@@ -156,7 +157,7 @@
             </div>
           </div>
         </section>
-        <div class="-mt-10 sm:-mt-20 lg:-mt-36 xs:w-screen container">
+        <div class="-mt-10 sm:-mt-20 lg:-mt-36 xs:w-screen container fade-up">
           <div
             class="flex transition-transform duration-500"
             data-slideContainer>
@@ -288,9 +289,10 @@
             src="./images/map.png"
             alt="Map"
             width="400"
-            class="md:flex-1 grow"
+            class="md:flex-1 grow fade-up"
             loading="lazy" />
-          <div class="md:flex-1 gap-4 grid md:text-left text-center grow">
+          <div
+            class="md:flex-1 gap-4 grid md:text-left text-center grow fade-up">
             <div class="relative">
               <div
                 class="hidden md:block -left-4 absolute bg-accent/10 w-8 h-full"></div>
@@ -312,7 +314,7 @@
         </section>
         <section
           aria-labelledby="cta"
-          class="gap-4 grid max-w-prose text-center container">
+          class="gap-4 grid max-w-prose text-center container fade-up">
           <div>
             <small class="text-accent uppercase tracking-widest"
               >It's Time to Explore</small
